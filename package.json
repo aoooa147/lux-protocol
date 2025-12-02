@@ -1,0 +1,38 @@
+{
+  "name": "@lux-protocol/abis",
+  "version": "0.1.0",
+  "description": "LUX Protocol ABIs and smart contract interfaces",
+  "main": "abis/index.js",
+  "types": "abis/index.d.ts",
+  "files": [
+    "abis",
+    "docs",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lux",
+    "protocol",
+    "staking",
+    "world-chain",
+    "defi",
+    "ethereum",
+    "blockchain"
+  ],
+  "author": "Luminex",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aoooa147/lux-protocol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aoooa147/lux-protocol/issues"
+  },
+  "homepage": "https://github.com/aoooa147/lux-protocol#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
+

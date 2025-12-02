@@ -1,0 +1,117 @@
+[
+  {
+    "inputs": [{ "name": "amount", "type": "uint256" }],
+    "name": "stake",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "retirarIntereses",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "amount", "type": "uint256" }],
+    "name": "retirarBalance",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "claim",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "userAddress", "type": "address" }],
+    "name": "currentReward",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "userAddress", "type": "address" }],
+    "name": "getUserInfo",
+    "outputs": [
+      {
+        "components": [
+          { "name": "intereses", "type": "uint256" },
+          { "name": "balance", "type": "uint256" },
+          { "name": "startTime", "type": "uint256" },
+          { "name": "lastClaimIntereses", "type": "uint256" },
+          { "name": "lastClaimBalance", "type": "uint256" },
+          { "name": "powerBoost", "type": "uint8" }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getTotalStaked",
+    "outputs": [{ "name": "", "type": "uint256" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [{ "name": "tier", "type": "uint8" }],
+    "name": "getPowerBoostTable",
+    "outputs": [
+      {
+        "components": [
+          { "name": "APY", "type": "uint16" },
+          { "name": "cost", "type": "uint256" },
+          { "name": "APY_Block", "type": "uint256" },
+          { "name": "cantidad", "type": "uint256" }
+        ],
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getPowerBoostRanking",
+    "outputs": [{ "name": "", "type": "uint256[]" }],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "user", "type": "address" },
+      { "indexed": false, "name": "amount", "type": "uint256" }
+    ],
+    "name": "Staked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "name": "user", "type": "address" },
+      { "indexed": false, "name": "amount", "type": "uint256" }
+    ],
+    "name": "Redeemed",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": false, "name": "_claimer", "type": "address" },
+      { "indexed": false, "name": "_amount", "type": "uint256" }
+    ],
+    "name": "Claim",
+    "type": "event"
+  }
+]
+
