@@ -5,17 +5,37 @@ Repository: **https://github.com/aoooa147/lux-protocol**
 ## Current Status
 
 ✅ Git repository initialized  
-✅ All files added  
+✅ All files added and committed  
 ✅ Remote origin configured  
 ✅ Ready to push
 
-## Final Step: Push to GitHub
+## 📋 Step-by-Step Guide
+
+### Step 1: สร้าง Personal Access Token
+
+1. ไปที่: https://github.com/settings/tokens
+2. คลิก "Generate new token" → "Generate new token (classic)"
+3. **Token name:** `LUX Protocol Push`
+4. **Expiration:** เลือก `30 days` หรือ `90 days`
+5. **Select scopes:** ✅ เลือก **`repo`** (Full control of private repositories)
+6. คลิก **"Generate token"**
+7. ⚠️ **คัดลอก token ทันที!** (จะเห็นแค่ครั้งเดียว)
+   - Token format: `ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
+
+### Step 2: Push to GitHub
 
 Run this command in PowerShell (from `protocol/` directory):
 
 ```powershell
 git push -u origin main
 ```
+
+### Step 3: Authentication
+
+เมื่อถูกถาม:
+
+- **Username:** `aoooa147`
+- **Password:** **วาง Personal Access Token ที่คัดลอกมา** (ไม่ใช่ GitHub password!)
 
 ### If Authentication Required
 
